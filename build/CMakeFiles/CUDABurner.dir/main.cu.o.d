@@ -1,7 +1,7 @@
 CMakeFiles/CUDABurner.dir/main.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/main.cu \
     /usr/include/stdc-predef.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_runtime.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/host_config.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_runtime.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/host_config.h \
     /usr/include/features.h \
     /usr/include/features-time64.h \
     /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -10,9 +10,9 @@ CMakeFiles/CUDABurner.dir/main.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/m
     /usr/include/x86_64-linux-gnu/bits/long-double.h \
     /usr/include/x86_64-linux-gnu/gnu/stubs.h \
     /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/builtin_types.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/device_types.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/host_defines.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/builtin_types.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/device_types.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/host_defines.h \
     /usr/include/ctype.h \
     /usr/include/x86_64-linux-gnu/bits/types.h \
     /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -21,8 +21,8 @@ CMakeFiles/CUDABurner.dir/main.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/m
     /usr/include/x86_64-linux-gnu/bits/endianness.h \
     /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
     /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/driver_types.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/vector_types.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/driver_types.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/vector_types.h \
     /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
     /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h \
     /usr/include/limits.h \
@@ -35,12 +35,12 @@ CMakeFiles/CUDABurner.dir/main.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/m
     /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
     /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
     /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/surface_types.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/texture_types.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/library_types.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/channel_descriptor.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_runtime_api.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_device_runtime_api.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/surface_types.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/texture_types.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/library_types.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/channel_descriptor.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_runtime_api.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_device_runtime_api.h \
     /usr/include/c++/14/stdlib.h \
     /usr/include/c++/14/cstdlib \
     /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
@@ -80,10 +80,10 @@ CMakeFiles/CUDABurner.dir/main.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/m
     /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
     /usr/include/x86_64-linux-gnu/bits/stdlib.h \
     /usr/include/c++/14/bits/std_abs.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/driver_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/vector_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/vector_functions.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/common_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/driver_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/vector_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/vector_functions.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/common_functions.h \
     /usr/include/string.h \
     /usr/include/strings.h \
     /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
@@ -110,7 +110,7 @@ CMakeFiles/CUDABurner.dir/main.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/m
     /usr/include/x86_64-linux-gnu/bits/stdio.h \
     /usr/include/x86_64-linux-gnu/bits/stdio2.h \
     /usr/include/assert.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/math_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/math_functions.h \
     /usr/include/c++/14/math.h \
     /usr/include/c++/14/cmath \
     /usr/include/c++/14/bits/requires_hosted.h \
@@ -158,41 +158,41 @@ CMakeFiles/CUDABurner.dir/main.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/m
     /usr/include/c++/14/tr1/poly_hermite.tcc \
     /usr/include/c++/14/tr1/poly_laguerre.tcc \
     /usr/include/c++/14/tr1/riemann_zeta.tcc \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/math_functions.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/device_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/device_functions.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/device_atomic_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/device_atomic_functions.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/device_double_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/device_double_functions.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_atomic_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_atomic_functions.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_32_atomic_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_32_atomic_functions.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_35_atomic_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_60_atomic_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_60_atomic_functions.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_30_intrinsics.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_30_intrinsics.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_32_intrinsics.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_32_intrinsics.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_35_intrinsics.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_61_intrinsics.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/sm_61_intrinsics.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/sm_70_rt.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/sm_70_rt.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/sm_80_rt.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/sm_80_rt.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/sm_90_rt.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/sm_90_rt.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/sm_100_rt.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/sm_100_rt.hpp \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/texture_indirect_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/surface_indirect_functions.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/cudacc_ext.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/device_launch_parameters.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/math_functions.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/device_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/device_functions.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/device_atomic_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/device_atomic_functions.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/device_double_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/device_double_functions.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_20_atomic_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_20_atomic_functions.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_32_atomic_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_32_atomic_functions.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_35_atomic_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_60_atomic_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_60_atomic_functions.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_20_intrinsics.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_30_intrinsics.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_30_intrinsics.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_32_intrinsics.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_32_intrinsics.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_35_intrinsics.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_61_intrinsics.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/sm_61_intrinsics.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/sm_70_rt.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/sm_70_rt.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/sm_80_rt.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/sm_80_rt.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/sm_90_rt.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/sm_90_rt.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/sm_100_rt.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/sm_100_rt.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/texture_indirect_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/surface_indirect_functions.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/cudacc_ext.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/device_launch_parameters.h \
     /usr/include/c++/14/utility \
     /usr/include/c++/14/bits/stl_relops.h \
     /usr/include/c++/14/initializer_list \
@@ -355,16 +355,22 @@ CMakeFiles/CUDABurner.dir/main.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/m
     /usr/include/c++/14/ctime \
     /usr/include/c++/14/bits/parse_numbers.h \
     /usr/include/c++/14/chrono \
-    /home/stlin/project/CUDA_TEST/CUDABurner/core/gpu_props.hpp \
-    /home/stlin/project/CUDA_TEST/CUDABurner/monitoring/monitor.hpp \
     /usr/include/c++/14/vector \
     /usr/include/c++/14/bits/stl_vector.h \
     /usr/include/c++/14/bits/stl_bvector.h \
     /usr/include/c++/14/bits/vector.tcc \
+    /usr/include/c++/14/algorithm \
+    /usr/include/c++/14/bits/stl_algo.h \
+    /usr/include/c++/14/bits/algorithmfwd.h \
+    /usr/include/c++/14/bits/stl_heap.h \
+    /usr/include/c++/14/bits/uniform_int_dist.h \
+    /usr/include/c++/14/pstl/glue_algorithm_defs.h \
+    /home/stlin/project/CUDA_TEST/CUDABurner/core/gpu_props.hpp \
+    /home/stlin/project/CUDA_TEST/CUDABurner/monitoring/monitor.hpp \
     /usr/include/c++/14/mutex \
     /usr/include/c++/14/bits/std_mutex.h \
     /usr/include/c++/14/bits/unique_lock.h \
-    /usr/local/cuda/bin/../targets/x86_64-linux/include/nvml.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/nvml.h \
     /home/stlin/project/CUDA_TEST/CUDABurner/strategies/base_strategy.hpp \
     /home/stlin/project/CUDA_TEST/CUDABurner/strategies/stress_strategy.hpp \
     /home/stlin/project/CUDA_TEST/CUDABurner/operators/base_operator.hpp \

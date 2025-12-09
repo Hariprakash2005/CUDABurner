@@ -222,6 +222,54 @@ monitoring/monitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/monitoring/monitor.cpp.s
 .PHONY : monitoring/monitor.cpp.s
 
+operators/gemm_fp4_tensorcore.o: operators/gemm_fp4_tensorcore.cu.o
+.PHONY : operators/gemm_fp4_tensorcore.o
+
+# target to build an object file
+operators/gemm_fp4_tensorcore.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o
+.PHONY : operators/gemm_fp4_tensorcore.cu.o
+
+operators/gemm_fp4_tensorcore.i: operators/gemm_fp4_tensorcore.cu.i
+.PHONY : operators/gemm_fp4_tensorcore.i
+
+# target to preprocess a source file
+operators/gemm_fp4_tensorcore.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.i
+.PHONY : operators/gemm_fp4_tensorcore.cu.i
+
+operators/gemm_fp4_tensorcore.s: operators/gemm_fp4_tensorcore.cu.s
+.PHONY : operators/gemm_fp4_tensorcore.s
+
+# target to generate assembly for a file
+operators/gemm_fp4_tensorcore.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.s
+.PHONY : operators/gemm_fp4_tensorcore.cu.s
+
+operators/gemm_fp8_tensorcore.o: operators/gemm_fp8_tensorcore.cu.o
+.PHONY : operators/gemm_fp8_tensorcore.o
+
+# target to build an object file
+operators/gemm_fp8_tensorcore.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o
+.PHONY : operators/gemm_fp8_tensorcore.cu.o
+
+operators/gemm_fp8_tensorcore.i: operators/gemm_fp8_tensorcore.cu.i
+.PHONY : operators/gemm_fp8_tensorcore.i
+
+# target to preprocess a source file
+operators/gemm_fp8_tensorcore.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.i
+.PHONY : operators/gemm_fp8_tensorcore.cu.i
+
+operators/gemm_fp8_tensorcore.s: operators/gemm_fp8_tensorcore.cu.s
+.PHONY : operators/gemm_fp8_tensorcore.s
+
+# target to generate assembly for a file
+operators/gemm_fp8_tensorcore.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.s
+.PHONY : operators/gemm_fp8_tensorcore.cu.s
+
 operators/gemm_generic.o: operators/gemm_generic.cu.o
 .PHONY : operators/gemm_generic.o
 
@@ -294,29 +342,29 @@ operators/gemm_tensorcore.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.s
 .PHONY : operators/gemm_tensorcore.cu.s
 
-operators/operator_factory.o: operators/operator_factory.cpp.o
+operators/operator_factory.o: operators/operator_factory.cu.o
 .PHONY : operators/operator_factory.o
 
 # target to build an object file
-operators/operator_factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o
-.PHONY : operators/operator_factory.cpp.o
+operators/operator_factory.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o
+.PHONY : operators/operator_factory.cu.o
 
-operators/operator_factory.i: operators/operator_factory.cpp.i
+operators/operator_factory.i: operators/operator_factory.cu.i
 .PHONY : operators/operator_factory.i
 
 # target to preprocess a source file
-operators/operator_factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.i
-.PHONY : operators/operator_factory.cpp.i
+operators/operator_factory.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.i
+.PHONY : operators/operator_factory.cu.i
 
-operators/operator_factory.s: operators/operator_factory.cpp.s
+operators/operator_factory.s: operators/operator_factory.cu.s
 .PHONY : operators/operator_factory.s
 
 # target to generate assembly for a file
-operators/operator_factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.s
-.PHONY : operators/operator_factory.cpp.s
+operators/operator_factory.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CUDABurner.dir/build.make CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.s
+.PHONY : operators/operator_factory.cu.s
 
 operators/power_virus_kernel.o: operators/power_virus_kernel.cu.o
 .PHONY : operators/power_virus_kernel.o
@@ -457,6 +505,12 @@ help:
 	@echo "... monitoring/monitor.o"
 	@echo "... monitoring/monitor.i"
 	@echo "... monitoring/monitor.s"
+	@echo "... operators/gemm_fp4_tensorcore.o"
+	@echo "... operators/gemm_fp4_tensorcore.i"
+	@echo "... operators/gemm_fp4_tensorcore.s"
+	@echo "... operators/gemm_fp8_tensorcore.o"
+	@echo "... operators/gemm_fp8_tensorcore.i"
+	@echo "... operators/gemm_fp8_tensorcore.s"
 	@echo "... operators/gemm_generic.o"
 	@echo "... operators/gemm_generic.i"
 	@echo "... operators/gemm_generic.s"

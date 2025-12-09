@@ -251,4 +251,9 @@ CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/chrono
+ /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/chrono \
+ /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
+ /usr/include/c++/14/bits/algorithmfwd.h \
+ /usr/include/c++/14/bits/stl_heap.h \
+ /usr/include/c++/14/bits/uniform_int_dist.h \
+ /usr/include/c++/14/pstl/glue_algorithm_defs.h

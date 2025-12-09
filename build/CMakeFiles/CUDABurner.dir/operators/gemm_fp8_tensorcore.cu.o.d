@@ -1,4 +1,4 @@
-CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/operators/vector_add.cu \
+CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o : /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_fp8_tensorcore.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_runtime.h \
     /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/crt/host_config.h \
@@ -196,7 +196,7 @@ CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o : /home/stlin/project/CUDA_T
     /usr/include/c++/14/utility \
     /usr/include/c++/14/bits/stl_relops.h \
     /usr/include/c++/14/initializer_list \
-    /home/stlin/project/CUDA_TEST/CUDABurner/operators/vector_add.hpp \
+    /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_fp8_tensorcore.hpp \
     /home/stlin/project/CUDA_TEST/CUDABurner/operators/base_operator.hpp \
     /home/stlin/project/CUDA_TEST/CUDABurner/operators/operator_traits.hpp \
     /usr/include/c++/14/string \
@@ -265,8 +265,8 @@ CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o : /home/stlin/project/CUDA_T
     /usr/include/c++/14/bits/stl_map.h \
     /usr/include/c++/14/bits/stl_multimap.h \
     /usr/include/c++/14/bits/erase_if.h \
-    /home/stlin/project/CUDA_TEST/CUDABurner/utils/helpers.hpp \
-    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cublas_v2.h \
+    /home/stlin/project/CUDA_TEST/CUDABurner/core/gpu_props.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cublasLt.h \
     /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cublas_api.h \
     /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
     /usr/include/stdint.h \
@@ -280,6 +280,8 @@ CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o : /home/stlin/project/CUDA_T
     /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_fp16.hpp \
     /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_bf16.h \
     /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_bf16.hpp \
+    /home/stlin/project/CUDA_TEST/CUDABurner/utils/helpers.hpp \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cublas_v2.h \
     /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/nvml.h \
     /usr/include/c++/14/iostream \
     /usr/include/c++/14/ostream \
@@ -321,4 +323,6 @@ CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o : /home/stlin/project/CUDA_T
     /usr/include/c++/14/bits/basic_ios.tcc \
     /usr/include/c++/14/bits/ostream.tcc \
     /usr/include/c++/14/istream \
-    /usr/include/c++/14/bits/istream.tcc
+    /usr/include/c++/14/bits/istream.tcc \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_fp8.h \
+    /usr/local/cuda-13.1/bin/../targets/x86_64-linux/include/cuda_fp8.hpp

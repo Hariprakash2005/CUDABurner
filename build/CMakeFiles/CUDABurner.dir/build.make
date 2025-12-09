@@ -74,7 +74,7 @@ CMakeFiles/CUDABurner.dir/main.cu.o: CMakeFiles/CUDABurner.dir/includes_CUDA.rsp
 CMakeFiles/CUDABurner.dir/main.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/main.cu
 CMakeFiles/CUDABurner.dir/main.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/CUDABurner.dir/main.cu.o"
-	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/main.cu.o -MF CMakeFiles/CUDABurner.dir/main.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/main.cu -o CMakeFiles/CUDABurner.dir/main.cu.o
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/main.cu.o -MF CMakeFiles/CUDABurner.dir/main.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/main.cu -o CMakeFiles/CUDABurner.dir/main.cu.o
 
 CMakeFiles/CUDABurner.dir/main.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/main.cu.i"
@@ -103,7 +103,7 @@ CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o: CMakeFiles/CUDABurner.dir
 CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_generic.cu
 CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o"
-	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o -MF CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_generic.cu -o CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o -MF CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_generic.cu -o CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.o
 
 CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/operators/gemm_generic.cu.i"
@@ -118,7 +118,7 @@ CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o: CMakeFiles/CUDABurner.
 CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_tensorcore.cu
 CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CUDA object CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o"
-	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o -MF CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_tensorcore.cu -o CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o -MF CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_tensorcore.cu -o CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o
 
 CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.i"
@@ -133,7 +133,7 @@ CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o: CMakeFiles/CUDABurner.dir/i
 CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/vector_add.cu
 CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CUDA object CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o"
-	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o -MF CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/vector_add.cu -o CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o -MF CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/vector_add.cu -o CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o
 
 CMakeFiles/CUDABurner.dir/operators/vector_add.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/operators/vector_add.cu.i"
@@ -148,7 +148,7 @@ CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o: CMakeFiles/CUDABurn
 CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/power_virus_kernel.cu
 CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CUDA object CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o"
-	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o -MF CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/power_virus_kernel.cu -o CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o -MF CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/power_virus_kernel.cu -o CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o
 
 CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.i"
@@ -163,7 +163,7 @@ CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o: CMakeFiles/CUDA
 CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_sparse_tensorcore.cu
 CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CUDA object CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o"
-	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o -MF CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_sparse_tensorcore.cu -o CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o -MF CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_sparse_tensorcore.cu -o CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o
 
 CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.i"
@@ -173,24 +173,55 @@ CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
-CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o: CMakeFiles/CUDABurner.dir/flags.make
-CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/operator_factory.cpp
-CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o -MF CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o.d -o CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/operator_factory.cpp
+CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o: CMakeFiles/CUDABurner.dir/flags.make
+CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o: CMakeFiles/CUDABurner.dir/includes_CUDA.rsp
+CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_fp8_tensorcore.cu
+CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CUDA object CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o"
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o -MF CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_fp8_tensorcore.cu -o CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o
 
-CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stlin/project/CUDA_TEST/CUDABurner/operators/operator_factory.cpp > CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.i
+CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
 
-CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stlin/project/CUDA_TEST/CUDABurner/operators/operator_factory.cpp -o CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.s
+CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o: CMakeFiles/CUDABurner.dir/flags.make
+CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o: CMakeFiles/CUDABurner.dir/includes_CUDA.rsp
+CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_fp4_tensorcore.cu
+CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CUDA object CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o"
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o -MF CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/gemm_fp4_tensorcore.cu -o CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o
+
+CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o: CMakeFiles/CUDABurner.dir/flags.make
+CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o: CMakeFiles/CUDABurner.dir/includes_CUDA.rsp
+CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o: /home/stlin/project/CUDA_TEST/CUDABurner/operators/operator_factory.cu
+CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CUDA object CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o"
+	/usr/local/cuda-13.1/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o -MF CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o.d -x cu -rdc=true -c /home/stlin/project/CUDA_TEST/CUDABurner/operators/operator_factory.cu -o CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o
+
+CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
 CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o: CMakeFiles/CUDABurner.dir/flags.make
 CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o: /home/stlin/project/CUDA_TEST/CUDABurner/strategies/stress_strategy.cpp
 CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o -MF CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o.d -o CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o -c /home/stlin/project/CUDA_TEST/CUDABurner/strategies/stress_strategy.cpp
 
 CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.i: cmake_force
@@ -204,7 +235,7 @@ CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.s: cmake_force
 CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o: CMakeFiles/CUDABurner.dir/flags.make
 CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o: /home/stlin/project/CUDA_TEST/CUDABurner/strategies/benchmark_strategy.cpp
 CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o -MF CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o.d -o CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o -c /home/stlin/project/CUDA_TEST/CUDABurner/strategies/benchmark_strategy.cpp
 
 CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.i: cmake_force
@@ -218,7 +249,7 @@ CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.s: cmake_force
 CMakeFiles/CUDABurner.dir/ui/tui.cpp.o: CMakeFiles/CUDABurner.dir/flags.make
 CMakeFiles/CUDABurner.dir/ui/tui.cpp.o: /home/stlin/project/CUDA_TEST/CUDABurner/ui/tui.cpp
 CMakeFiles/CUDABurner.dir/ui/tui.cpp.o: CMakeFiles/CUDABurner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CUDABurner.dir/ui/tui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/CUDABurner.dir/ui/tui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CUDABurner.dir/ui/tui.cpp.o -MF CMakeFiles/CUDABurner.dir/ui/tui.cpp.o.d -o CMakeFiles/CUDABurner.dir/ui/tui.cpp.o -c /home/stlin/project/CUDA_TEST/CUDABurner/ui/tui.cpp
 
 CMakeFiles/CUDABurner.dir/ui/tui.cpp.i: cmake_force
@@ -238,7 +269,9 @@ CUDABurner_OBJECTS = \
 "CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o" \
 "CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o" \
 "CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o" \
-"CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o" \
+"CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o" \
+"CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o" \
+"CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o" \
 "CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o" \
 "CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o" \
 "CMakeFiles/CUDABurner.dir/ui/tui.cpp.o"
@@ -253,7 +286,9 @@ CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/operato
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o
-CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o
+CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o
+CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o
+CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/ui/tui.cpp.o
@@ -262,7 +297,7 @@ CMakeFiles/CUDABurner.dir/cmake_device_link.o: /usr/lib/x86_64-linux-gnu/libnvid
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/deviceLinkLibs.rsp
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/deviceObjects1.rsp
 CMakeFiles/CUDABurner.dir/cmake_device_link.o: CMakeFiles/CUDABurner.dir/dlink.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CUDA device code CMakeFiles/CUDABurner.dir/cmake_device_link.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CUDA device code CMakeFiles/CUDABurner.dir/cmake_device_link.o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CUDABurner.dir/dlink.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -278,7 +313,9 @@ CUDABurner_OBJECTS = \
 "CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o" \
 "CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o" \
 "CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o" \
-"CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o" \
+"CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o" \
+"CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o" \
+"CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o" \
 "CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o" \
 "CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o" \
 "CMakeFiles/CUDABurner.dir/ui/tui.cpp.o"
@@ -293,7 +330,9 @@ CUDABurner: CMakeFiles/CUDABurner.dir/operators/gemm_tensorcore.cu.o
 CUDABurner: CMakeFiles/CUDABurner.dir/operators/vector_add.cu.o
 CUDABurner: CMakeFiles/CUDABurner.dir/operators/power_virus_kernel.cu.o
 CUDABurner: CMakeFiles/CUDABurner.dir/operators/gemm_sparse_tensorcore.cu.o
-CUDABurner: CMakeFiles/CUDABurner.dir/operators/operator_factory.cpp.o
+CUDABurner: CMakeFiles/CUDABurner.dir/operators/gemm_fp8_tensorcore.cu.o
+CUDABurner: CMakeFiles/CUDABurner.dir/operators/gemm_fp4_tensorcore.cu.o
+CUDABurner: CMakeFiles/CUDABurner.dir/operators/operator_factory.cu.o
 CUDABurner: CMakeFiles/CUDABurner.dir/strategies/stress_strategy.cpp.o
 CUDABurner: CMakeFiles/CUDABurner.dir/strategies/benchmark_strategy.cpp.o
 CUDABurner: CMakeFiles/CUDABurner.dir/ui/tui.cpp.o
@@ -301,7 +340,7 @@ CUDABurner: CMakeFiles/CUDABurner.dir/build.make
 CUDABurner: /usr/lib/x86_64-linux-gnu/libnvidia-ml.so
 CUDABurner: CMakeFiles/CUDABurner.dir/cmake_device_link.o
 CUDABurner: CMakeFiles/CUDABurner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable CUDABurner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stlin/project/CUDA_TEST/CUDABurner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable CUDABurner"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CUDABurner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
