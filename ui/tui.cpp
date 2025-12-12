@@ -38,6 +38,7 @@ void TUI::render_loop() {
         std::cout << "[Global Info]" << std::endl;
         std::cout << "- Test Mode  : " << mode_ << std::endl;
         std::cout << "- Target GPU : [" << state.device_id << "] " << state.name << std::endl;
+        std::cout << "- Driver Ver : " << state.driver_version << std::endl;
         std::cout << "----------------------------------------------------------------------------" << std::endl;
         std::cout << "[GPU " << state.device_id << " Vitals]" << std::endl;
         
@@ -48,6 +49,15 @@ void TUI::render_loop() {
         std::cout << "- GPU Clock   : " << state.gpu_clock << " MHz" << std::endl;
         std::cout << "- Memory Clock: " << state.mem_clock << " MHz" << std::endl;
         std::cout << "- Utilization : GPU " << state.gpu_util << "% | VRAM " << state.mem_util << "%" << std::endl;
+
+        // --- NEW: Performance Limiters Display ---
+        std::string limits = "";
+        if (state.is_power_limited) limits += "[Power] ";
+        if (state.is_thermal_limited) limits += "[Thermal] ";
+        if (state.is_utilization_limited) limits += "[Max Performance] ";
+        if (limits.empty() && state.gpu_util < 99) limits = "[Idle/Low Load]";
+
+        std::cout << "- Performance Limit: " << limits << std::endl;
         std::cout << "----------------------------------------------------------------------------" << std::endl;
 
         if (mode_ == "stress") {

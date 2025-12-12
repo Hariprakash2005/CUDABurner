@@ -7,6 +7,7 @@ GpuMonitor::GpuMonitor(unsigned int device_id) : device_id_(device_id), stop_fla
     NVML_CHECK(nvmlInit());
     NVML_CHECK(nvmlDeviceGetHandleByIndex(device_id_, &device_handle_));
     NVML_CHECK(nvmlDeviceGetName(device_handle_, current_state_.name, NVML_DEVICE_NAME_BUFFER_SIZE));
+    NVML_CHECK(nvmlSystemGetDriverVersion(current_state_.driver_version, NVML_SYSTEM_DRIVER_VERSION_BUFFER_SIZE));
     current_state_.device_id = device_id_;
 }
 
@@ -39,6 +40,7 @@ void GpuMonitor::monitor_loop() {
         GpuState new_state{};
         new_state.device_id = device_id_;
         nvmlDeviceGetName(device_handle_, new_state.name, NVML_DEVICE_NAME_BUFFER_SIZE);
+        nvmlSystemGetDriverVersion(new_state.driver_version, NVML_SYSTEM_DRIVER_VERSION_BUFFER_SIZE);
 
         nvmlTemperatureSensors_t sensor_type = NVML_TEMPERATURE_GPU;
         nvmlReturn_t result;
@@ -69,6 +71,17 @@ void GpuMonitor::monitor_loop() {
         nvmlClockType_t clock_type_mem = NVML_CLOCK_MEM;
         result = nvmlDeviceGetClockInfo(device_handle_, clock_type_mem, &new_state.mem_clock);
         if (result != NVML_SUCCESS) new_state.mem_clock = 0;
+
+        // --- NEW: Performance Limiters ---
+        unsigned long long reasons;
+        // The function was correctly suggested by the compiler error, let's use it.
+        result = nvmlDeviceGetCurrentClocksThrottleReasons(device_handle_, &reasons);
+        if (result == NVML_SUCCESS) {
+            new_state.is_power_limited = (reasons & nvmlClocksThrottleReasonSwPowerCap);
+            new_state.is_thermal_limited = (reasons & nvmlClocksThrottleReasonHwSlowdown);
+        }
+        // Infer utilization limit: if GPU is at 99-100% but not power/thermal limited, it's likely hitting its max internal speed.
+        new_state.is_utilization_limited = (new_state.gpu_util >= 99 && !new_state.is_power_limited && !new_state.is_thermal_limited);
 
         {
             std::lock_guard<std::mutex> lock(state_mutex_);

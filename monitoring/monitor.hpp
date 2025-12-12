@@ -9,6 +9,7 @@
 struct GpuState {
     unsigned int device_id;
     char name[NVML_DEVICE_NAME_BUFFER_SIZE];
+    char driver_version[NVML_SYSTEM_DRIVER_VERSION_BUFFER_SIZE];
     unsigned int temperature;
     unsigned int power_usage; // in Watts
     unsigned int power_limit; // in Watts
@@ -16,6 +17,11 @@ struct GpuState {
     unsigned int mem_clock;   // in MHz
     unsigned int gpu_util;    // in %
     unsigned int mem_util;    // in %
+    
+    // Performance limiting factors
+    bool is_power_limited = false;
+    bool is_thermal_limited = false;
+    bool is_utilization_limited = false; // No direct NVML equivalent, will be inferred
 };
 
 class GpuMonitor {
