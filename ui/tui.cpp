@@ -51,11 +51,19 @@ void TUI::render_loop() {
         std::cout << "- Utilization : GPU " << state.gpu_util << "% | VRAM " << state.mem_util << "%" << std::endl;
 
         // --- NEW: Performance Limiters Display ---
+        // Display logic adjustment: Prioritize showing thermal/power limits.
+        // Only show "Max Performance" if no other hardware limit is active.
         std::string limits = "";
-        if (state.is_power_limited) limits += "[Power] ";
         if (state.is_thermal_limited) limits += "[Thermal] ";
-        if (state.is_utilization_limited) limits += "[Max Performance] ";
-        if (limits.empty() && state.gpu_util < 99) limits = "[Idle/Low Load]";
+        if (state.is_power_limited) limits += "[Power] ";
+        
+        if (limits.empty()) {
+            if (state.is_utilization_limited) {
+                limits = "[Max Performance]";
+            } else {
+                limits = "[Idle/Low Load]";
+            }
+        }
 
         std::cout << "- Performance Limit: " << limits << std::endl;
         std::cout << "----------------------------------------------------------------------------" << std::endl;

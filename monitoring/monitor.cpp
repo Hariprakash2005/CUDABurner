@@ -80,8 +80,8 @@ void GpuMonitor::monitor_loop() {
             new_state.is_power_limited = (reasons & nvmlClocksThrottleReasonSwPowerCap);
             new_state.is_thermal_limited = (reasons & nvmlClocksThrottleReasonHwSlowdown);
         }
-        // Infer utilization limit: if GPU is at 99-100% but not power/thermal limited, it's likely hitting its max internal speed.
-        new_state.is_utilization_limited = (new_state.gpu_util >= 99 && !new_state.is_power_limited && !new_state.is_thermal_limited);
+        // Infer utilization limit: if GPU is at 99-100% it means the GPU is running as fast as the current application allows.
+        new_state.is_utilization_limited = (new_state.gpu_util >= 99);
 
         {
             std::lock_guard<std::mutex> lock(state_mutex_);
