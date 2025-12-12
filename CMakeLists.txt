@@ -71,3 +71,13 @@ target_link_libraries(CUDABurner PRIVATE
 
 target_compile_options(CUDABurner PRIVATE -Wall -Wextra -O3)
 install(TARGETS CUDABurner DESTINATION bin)
+
+# Install the .desktop file for AppImage/Linux integration
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/CUDABurner.desktop"
+        DESTINATION share/applications)
+
+# Install the icon file
+# It's assumed the icon is generated before cmake is run, or is present in the source dir.
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/cudaburner.png"
+        DESTINATION share/icons/hicolor/128x128/apps
+        RENAME cudaburner.png)
