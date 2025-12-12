@@ -14,6 +14,7 @@ public:
     }
     virtual double get_current_performance() const = 0;
     virtual std::string get_active_operators_name() const = 0;
+    virtual int get_countdown() const { return 0; }
 
     bool is_done() const {
         return done_flag_;

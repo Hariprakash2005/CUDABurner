@@ -109,6 +109,16 @@ void BenchmarkStrategy::run_loop() {
             std::lock_guard<std::mutex> lock(results_mutex_);
             results_.push_back(current_result);
         }
+
+        // Pause for 5 seconds between tests to allow GPU to cool down
+        if (!stop_flag_) {
+            for (int i = 5; i > 0; --i) {
+                countdown_seconds_ = i;
+                if(stop_flag_) break;
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+            }
+            countdown_seconds_ = 0;
+        }
     }
     done_flag_ = true;
 }

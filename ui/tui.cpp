@@ -102,6 +102,11 @@ void TUI::render_loop() {
             }
         }
         
+        int countdown = strategy_.get_countdown();
+        if (countdown > 0) {
+            std::cout << "Next test starting in " << countdown << " seconds..." << std::endl;
+        }
+
         std::cout << "----------------------------------------------------------------------------" << std::endl;
         if(strategy_.is_done()) {
             std::cout << "Test finished. Press Ctrl+C to exit." << std::endl;

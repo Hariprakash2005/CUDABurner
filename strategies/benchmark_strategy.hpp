@@ -16,6 +16,7 @@ public:
     // Benchmark模式下这两个函数意义不大，可以返回固定值
     double get_current_performance() const override { return 0; }
     std::string get_active_operators_name() const override { return "Benchmarking..."; }
+    int get_countdown() const override { return countdown_seconds_; }
 
 private:
     void run_loop();
@@ -26,4 +27,5 @@ private:
     
     mutable std::mutex results_mutex_;
     std::vector<BenchmarkResult> results_;
+    std::atomic<int> countdown_seconds_{0};
 };
