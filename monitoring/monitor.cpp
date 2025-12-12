@@ -74,14 +74,31 @@ void GpuMonitor::monitor_loop() {
 
         // --- NEW: Performance Limiters ---
         unsigned long long reasons;
-        // The function was correctly suggested by the compiler error, let's use it.
         result = nvmlDeviceGetCurrentClocksThrottleReasons(device_handle_, &reasons);
+        
+        std::string limits_str;
         if (result == NVML_SUCCESS) {
-            new_state.is_power_limited = (reasons & nvmlClocksThrottleReasonSwPowerCap);
-            new_state.is_thermal_limited = (reasons & nvmlClocksThrottleReasonHwSlowdown);
+            if (reasons & nvmlClocksThrottleReasonGpuIdle) limits_str += "[Idle] ";
+            if (reasons & nvmlClocksThrottleReasonSwPowerCap) limits_str += "[Power] ";
+            if (reasons & nvmlClocksThrottleReasonHwSlowdown) limits_str += "[HW Thermal] ";
+#ifdef nvmlClocksThrottleReasonSwThermal
+            if (reasons & nvmlClocksThrottleReasonSwThermal) limits_str += "[SW Thermal] ";
+#endif
+#ifdef nvmlClocksThrottleReasonHwPowerBrake
+            if (reasons & nvmlClocksThrottleReasonHwPowerBrake) limits_str += "[HW Power Brake] ";
+#endif
+            if (reasons & nvmlClocksThrottleReasonSyncBoost) limits_str += "[Sync Boost] ";
         }
-        // Infer utilization limit: if GPU is at 99-100% it means the GPU is running as fast as the current application allows.
-        new_state.is_utilization_limited = (new_state.gpu_util >= 99);
+
+        // If no hardware/software limit is active, infer based on utilization
+        if (limits_str.empty()) {
+            if (new_state.gpu_util >= 99) {
+                limits_str = "[Max Performance]";
+            } else {
+                limits_str = "[Low Load]";
+            }
+        }
+        new_state.perf_limiters = limits_str;
 
         {
             std::lock_guard<std::mutex> lock(state_mutex_);

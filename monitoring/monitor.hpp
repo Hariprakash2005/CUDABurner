@@ -19,9 +19,7 @@ struct GpuState {
     unsigned int mem_util;    // in %
     
     // Performance limiting factors
-    bool is_power_limited = false;
-    bool is_thermal_limited = false;
-    bool is_utilization_limited = false; // No direct NVML equivalent, will be inferred
+    std::string perf_limiters;
 };
 
 class GpuMonitor {
