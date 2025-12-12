@@ -77,7 +77,10 @@ void GpuMonitor::monitor_loop() {
         result = nvmlDeviceGetCurrentClocksThrottleReasons(device_handle_, &reasons);
         
         std::string limits_str;
+#include <iostream> // For std::cerr
         if (result == NVML_SUCCESS) {
+            // Debug: Print the raw reasons value
+            std::cerr << "Throttling reasons: " << reasons << std::endl;
             if (reasons & nvmlClocksThrottleReasonGpuIdle) limits_str += "[Idle] ";
             if (reasons & nvmlClocksThrottleReasonSwPowerCap) limits_str += "[Power] ";
             if (reasons & nvmlClocksThrottleReasonHwSlowdown) limits_str += "[HW Thermal] ";
