@@ -80,12 +80,14 @@ void GpuMonitor::monitor_loop() {
 #include <iostream> // For std::cerr
         if (result == NVML_SUCCESS) {
             // Debug: Print the raw reasons value
-            std::cerr << "Throttling reasons: " << reasons << std::endl;
+            // std::cerr << "Throttling reasons: " << reasons << std::endl;
             if (reasons & nvmlClocksThrottleReasonGpuIdle) limits_str += "[Idle] ";
             if (reasons & nvmlClocksThrottleReasonSwPowerCap) limits_str += "[Power] ";
             if (reasons & nvmlClocksThrottleReasonHwSlowdown) limits_str += "[HW Thermal] ";
 #ifdef nvmlClocksThrottleReasonSwThermal
-            if (reasons & nvmlClocksThrottleReasonSwThermal) limits_str += "[SW Thermal] ";
+            // Bitwise AND might not work as expected with some NVML versions/drivers.
+            // Using the literal value 32 as a fallback.
+            if ((reasons & nvmlClocksThrottleReasonSwThermal) || (reasons & 32)) limits_str += "[SW Thermal] ";
 #endif
 #ifdef nvmlClocksThrottleReasonHwPowerBrake
             if (reasons & nvmlClocksThrottleReasonHwPowerBrake) limits_str += "[HW Power Brake] ";
